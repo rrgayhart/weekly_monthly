@@ -6,7 +6,8 @@
       <tr>
         <th>Title</th>
         <th>Body</th>
-        <th>Day</th>
+        <th>Date Due</th>
+        <th>Schedule</th>
         <th>Tag</th>
         <th></th>
         <th></th>
@@ -19,7 +20,8 @@
         <tr>
           <td><%= chore.title %></td>
           <td><%= chore.body %></td>
-          <td><%= chore.day %></td>
+          <td><%= chore.date_due %></td>
+          <td><%= chore.schedule %></td>
           <td><%= chore.tag %></td>
           <td><%= link_to 'Show', chore %></td>
           <td><%= link_to 'Edit', edit_chore_path(chore) %></td>

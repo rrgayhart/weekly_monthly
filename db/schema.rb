@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131104014615) do
+ActiveRecord::Schema.define(version: 20131104194711) do
 
   create_table "chores", force: true do |t|
     t.string   "title"
     t.text     "body"
-    t.string   "day"
     t.string   "tag"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "date_due"
+    t.string   "schedule"
   end
 
   create_table "users", force: true do |t|
