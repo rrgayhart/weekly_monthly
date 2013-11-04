@@ -21,6 +21,8 @@ db:test:prepare
 To ensure that the database is prepared for testing
 ```ruby
 rake db:test:load
+
+rake test
 ```
 To run all tests
 
