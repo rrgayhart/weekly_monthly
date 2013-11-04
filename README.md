@@ -26,9 +26,8 @@ rake test
 To run all tests
 
 * Deployment instructions
-  
 ```ruby
-rails server
+rails s
 ```
 
 Navigate to localhost:3000 in the browser
