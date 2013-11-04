@@ -17,6 +17,8 @@
             <% Chore.all.each do |e| %>
               <% if e.date_due == d %>
                 <li> <%= e.title %></li>
+              <% elsif e.schedule == "weekly" && e.date_due.wday == d.wday %>
+                <li> <%= e.title %></li>
               <% end %>
             <% end %>
           </ul>
