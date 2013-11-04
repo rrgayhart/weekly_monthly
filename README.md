@@ -26,4 +26,11 @@ rake test
 To run all tests
 
 * Deployment instructions
-  Run Rails Server
+  
+```ruby
+rails server
+```
+
+Navigate to localhost:3000 in the browser
+
+Create your first admin user - after that, the app will redirect anyone not logged in to the log in screen. Only logged in users can create new users after initial user is set up.
