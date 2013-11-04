@@ -1,28 +1,22 @@
-== README
+Weekly_Monthly
+==============
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails App to Track Monthly Chores
 
-Things you may want to cover:
+Currently in production:
+I0
 
-* Ruby version
+First iteration goals are to have appropriate views 
+and to require user log in to move forward in the app.
 
-* System dependencies
+-------------
 
-* Configuration
+* Ruby version 2.0.0
+* Rails version 4.0.0
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+* Testing with Capybara
+-
 
 * Deployment instructions
+-
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
