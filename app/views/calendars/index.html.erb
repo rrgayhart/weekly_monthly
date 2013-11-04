@@ -14,7 +14,11 @@
         <td>
           <%= d.day %>
           <ul>
-              <li><%= "This is where events go" %></li>
+            <% Chore.all.each do |e| %>
+              <% if e.date_due == d %>
+                <li> <%= e.title %></li>
+              <% end %>
+            <% end %>
           </ul>
         </td>
       <% end %>
