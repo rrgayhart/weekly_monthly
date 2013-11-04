@@ -13,7 +13,16 @@ and to require user log in to move forward in the app.
 
 * Ruby version 2.0.0
 * Rails version 4.0.0
-* Testing with Capybara
-  Run Rake Test (not currently functional)
+
+* Testing
+```ruby
+db:test:prepare
+```
+To ensure that the database is prepared for testing
+```ruby
+rake db:test:load
+```
+To run all tests
+
 * Deployment instructions
   Run Rails Server
