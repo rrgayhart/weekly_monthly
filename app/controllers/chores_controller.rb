@@ -1,6 +1,6 @@
 class ChoresController < ApplicationController
   before_action :set_chore, only: [:show, :edit, :update, :destroy]
-
+  before_filter :require_login, only: [:show, :edit, :update, :destroy]
   # GET /chores
   # GET /chores.json
   def index

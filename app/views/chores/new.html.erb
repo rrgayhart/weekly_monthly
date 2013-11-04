@@ -1,5 +1,7 @@
-<h1>New chore</h1>
+<%if logged_in?%>
+  <h1>New chore</h1>
 
-<%= render 'form' %>
+  <%= render 'form' %>
 
-<%= link_to 'Back', chores_path %>
+  <%= link_to 'Back', chores_path %>
+<% end %>
