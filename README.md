@@ -1,5 +1,5 @@
 Weekly_Monthly
-==============
+=======
 
 Rails App to Track Monthly Chores
 
