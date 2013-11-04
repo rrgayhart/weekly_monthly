@@ -1,0 +1,22 @@
+<table id="calendar">
+  <tr>
+    <th>Sunday</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+  </tr>
+  <tr>
+    <% (@calendar.begin_weekly_calendar..@calendar.end_weekly_calendar(4)).each do |d| %>
+      <% if d.wday == 0 %></tr><tr><% end %>
+        <td>
+          <%= d.day %>
+          <ul>
+              <li><%= @calendar.day %></li>
+          </ul>
+        </td>
+      <% end %>
+  </tr>
+</table>

@@ -1,0 +1,24 @@
+<table id="calendar">
+  <tr>
+    <th>Sunday</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+  </tr>
+  <tr>
+    <% (begin_weekly_calendar..end_weekly_calendar(2)).each do |d| %>
+      <% if d.wday == 0 %></tr><tr><% end %>
+        <td>
+          <%= d.day %>
+          <ul>
+            <% @chore.todays_events(d.to_date).each do |e| %>
+              <li><%= e.title %></li>
+            <% end %>
+          </ul>
+        </td>
+      <% end %>
+  </tr>
+</table>
