@@ -12,7 +12,7 @@ and to require user log in to move forward in the app.
 -------------
 
 * Ruby version 2.0.0
-* Rails version 4.0.0
+* Rails version 4.0.1
 
 * Testing
 ```ruby
@@ -22,6 +22,7 @@ To ensure that the database is prepared for testing
 ```ruby
 rake db:test:load
 rake test
+rspec
 ```
 To run all tests
 
