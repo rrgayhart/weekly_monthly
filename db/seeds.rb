@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+chores = Chore.create([{ title: "Wash Dishes", body: "It must happen", tag: "Dishes", date_due: Date.today}, { title: "Wash Car", body: "It must happen", tag: "Car", date_due: Date.tomorrow}])
