@@ -1,15 +1,43 @@
-= require bootstrap-datepicker
 
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+#cal table {
+  margin: 0;
+  width: 100%;
+  border-color: gray;
+}
+
+#cal tbody {
+  vertical-align: top;
+}
+
+#cal td {
+  min-width: 125px;
+}
+
+#cal ul {
+  width: 200px;
+  margin:0;
+  padding:0;
+}
+
+#cal th {
+  vertical-align: top;
+  padding: 10px;
+  font-size: 30px;
+  background: #008a80;
+
+}
+
+#cal tr {
+  min-height: 200px;
+  text-align: center;
+}
+
+#cal ol li {
+  list-style:none;
+  text-align: center
+}
+
+.day {
+  padding-top: 0px;
+  font-size: 15px;
+}

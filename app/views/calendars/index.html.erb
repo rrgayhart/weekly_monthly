@@ -1,4 +1,6 @@
-<table id="calendar">
+<div id="calendar">
+  <h1>Four Week View</h1>
+<table id="cal">
   <tr>
     <th>Sunday</th>
     <th>Monday</th>
@@ -12,8 +14,8 @@
     <% (@calendar.begin_weekly_calendar..@calendar.end_weekly_calendar(4)).each do |d| %>
       <% if d.wday == 0 %></tr><tr><% end %>
         <td>
-          <%= d.day %>
-          <ul>
+          <p class="day"><%= d.day %></p>
+          <ol>
             <% Chore.all.each do |e| %>
               <% if e.date_due == d %>
                 <li> <%= e.title %></li>
@@ -21,8 +23,9 @@
                 <li> <%= e.title %></li>
               <% end %>
             <% end %>
-          </ul>
+          </ol>
         </td>
       <% end %>
   </tr>
 </table>
+</div>
